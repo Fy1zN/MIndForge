@@ -1,0 +1,42 @@
+🧠 MindForge - Smart Study Planner
+MindForge is a sleek, beginner-friendly productivity web app designed for students to manage their subjects, track their academic progress, and stay motivated with daily quotes and deadlines — all in a stylish card interface.
+
+PROJECT STRUCTURE 
+📁 MindForge/
+├── index.html            → Main HTML structure
+├── styles.css            → Responsive and modern styling
+├── js/
+│   ├── app.js            → Subject, quote, dark mode, deadline logic
+│   ├── progress.js       → Progress tracker slider functionality
+│   ├── tt.js             → Real-time timetable highlighting
+└── images/               → GitHub and LinkedIn icons
+
+✨ Features
+✅ Add subjects dynamically
+
+📊 Visual progress tracker with interactive sliders
+
+🗓️ Weekly timetable with real-time day/time highlight
+
+💡 Daily motivational quotes (auto + refresh)
+
+📌 Upcoming deadlines list (auto populated)
+
+🌙 Toggle between light and dark mode
+
+🧾 Fully responsive card-based layout
+
+👨‍💻 Footer with social links
+
+🧪 How to Run
+Download or clone this repo
+
+Open index.html in any modern browser
+
+Start managing your studies 💪
+
+No backend or dependencies needed. It's a pure HTML + CSS + JS frontend project.
+
+🙋‍♂️ Author
+Made with 💙 by Krish Malhotra
+GitHub | LinkedIn
