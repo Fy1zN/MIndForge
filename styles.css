@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    width: 90%;
+    max-width: 800px;
+    height: 95vh;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #080808, #3105d1);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+}
+
+
+/* Scrollbar styling (optional) */
+
+.card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+aside h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+ul#subjectList {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#addSubject {
+    padding: 6px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    color: #0b2288;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#subjectInput {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    width: auto;
+    max-width: 70%;
+    border: none;
+    border-radius: 6px;
+}
+
+.motivation {
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+#refreshQuote {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #0b2288;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#quoteLoader {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.progress {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.progress h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.progress-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.progress-item p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.bar {
+    background: #ffffff30;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: #34d399;
+    /* Teal */
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.timetable {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.timetable h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.timetable-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.slot {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.slot.header {
+    background: #4f46e5;
+    font-weight: bold;
+    color: #fff;
+}
+
+.slot.label {
+    background: #0b2288;
+    font-weight: bold;
+    color: #fff;
+}
+
+.goal {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    color: #ffffff;
+}
+
+.goal p {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #d1fae5;
+}
+
+.deadlines {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.deadlines ul {
+    list-style: none;
+    padding: 0;
+}
+
+.deadlines li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #ddd;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.highlight-now {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+
+.highlight-time {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-style: italic;
+}
+
+.error {
+    display: none;
+    color: #ffcccc;
+    text-align: center;
+    margin-top: 10px;
+}

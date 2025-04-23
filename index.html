@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindForge - Smart Study Planner</title>
+
+    <!-- External Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="card">
+        <header>
+            <h1>MindForge 🧠</h1>
+            <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
+        </header>
+
+        <main>
+            <aside>
+                <h2>SUBJECTS 📘</h2>
+                <ul id="subjectList"></ul>
+                <input type="text" id="subjectInput" placeholder="Enter subject name" />
+                <button id="addSubject" title="Add Subject">Add Subject ➕</button>
+                <div class="error" id="subjectError">Please enter a valid subject!</div>
+            </aside>
+            <section class="motivation">
+                <h2>Daily motivation 💡</h2>
+                <blockquote id="quote">Loading inspiration ⏳</blockquote>
+                <span id="quoteLoader" style="display:none;">⏳ Loading...</span>
+                <button id="refreshQuote">Refresh 🔄</button>
+            </section>
+            <section class="progress">
+                <h2>Progress Tracker 📈</h2>
+                <div class="progress-grid">
+                    <div class="progress-item">
+                        <p>Maths ❌</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <p>Science ❌</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <p>English ✅</p>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="goal">
+                <h2>Daily Goal 🎯</h2>
+                <p> Study at least 2 hours today</p>
+            </section>
+
+            <section class="timetable">
+                <h2>Weekly Timetable 🗓️</h2>
+                <div class="timetable-grid">
+                    <div class="slot header">Time</div>
+                    <div class="slot header">Mon</div>
+                    <div class="slot header">Tue</div>
+                    <div class="slot header">Wed</div>
+                    <div class="slot header">Thu</div>
+                    <div class="slot header">Fri</div>
+                    <div class="slot header">Sat</div>
+
+                    <div class="slot label">Morning</div>
+                    <div class="slot">Math</div>
+                    <div class="slot">—</div>
+                    <div class="slot">Science</div>
+                    <div class="slot">—</div>
+                    <div class="slot">English</div>
+                    <div class="slot">History</div>
+
+                    <div class="slot label">Afternoon</div>
+                    <div class="slot">—</div>
+                    <div class="slot">English</div>
+                    <div class="slot">Math</div>
+                    <div class="slot">History</div>
+                    <div class="slot">—</div>
+                    <div class="slot">Science</div>
+
+                    <div class="slot label">Evening</div>
+                    <div class="slot">—</div>
+                    <div class="slot">—</div>
+                    <div class="slot">—</div>
+                    <div class="slot">Science</div>
+                    <div class="slot">Math</div>
+                    <div class="slot">English</div>
+                </div>
+            </section>
+            <section class="deadlines">
+                <h2>Upcoming Deadlines 📌</h2>
+                <ul>
+                    <!-- This will be populated by JavaScript -->
+                </ul>
+            </section>
+
+        </main>
+        <footer>
+            <p>Made by Krish Malhotra </p>
+            <a href="https://github.com/Fy1zN">GitHub</a> |
+            <a href="https://www.linkedin.com/in/krish-malhotra-903092317/">LinkedIn</a>
+        </footer>
+        <script src="main.js/app.js"></script>
+        <script src="main.js/tt.js"></script>
+        <script src="main.js/progress.js"></script>
+        <script src="main.js/quotes.js"></script>
+
+</body>
+
+</html>
